@@ -1,0 +1,13 @@
+    <p id="notice"><%= notice %></p>
+
+    <p>
+    <strong>Body:</strong>
+    <%= @post.body %>
+    </p>
+
+    <p>
+    <strong>Hashbody:</strong>
+    <%= render_with_hashtags(@post.hashbody) %> #追記
+    </p>
+
+    <%= link_to 'Back', posts_path %>
